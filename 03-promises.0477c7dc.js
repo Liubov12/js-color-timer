@@ -5,4 +5,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=t(require("notiflix"));function t(e){return e&&e.__esModule?e:{default:e}}const r={form:document.querySelector(".form")};function o(e){e.preventDefault();let t=e.currentTarget.delay.valueAsNumber;const r=e.currentTarget.step.valueAsNumber,o=e.currentTarget.amount.valueAsNumber;for(let u=1;u<=o;u+=1)n(u,t),t+=r}function n(t,r){new Promise((e,o)=>{const n=Math.random()>.3;setTimeout(()=>{n?e({position:t,delay:r}):o({position:t,delay:r})},r)}).then(t=>{let{position:r,delay:o}=t;e.default.Notify.success(`✅ Fulfilled promise ${r} in ${o}ms`)}).catch(t=>{let{position:r,delay:o}=t;e.default.Notify.failure(`❌ Rejected promise ${r} in ${o}ms`)})}r.form.addEventListener("submit",o);
 },{"notiflix":"cwzQ"}]},{},["GyVV"], null)
-//# sourceMappingURL=/goit-js-hw-09/03-promises.0477c7dc.js.map
+//# sourceMappingURL=/js-color-timer/03-promises.0477c7dc.js.map
